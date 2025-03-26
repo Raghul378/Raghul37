@@ -1,0 +1,500 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Light background */
+    color: #333;
+}
+.container {
+    width: 90%; /* Increased width for better use of space */
+    max-width: 1200px; /* Added max-width for larger screens */
+    margin: auto;
+    overflow: hidden;
+}
+/* Header Styles */
+header {
+    background: #007acc; /* Darker blue for header */
+    color: #ffffff;
+    padding: 20px 0;
+}
+header h1 {
+    text-align: center;
+}
+/* Navbar Styles */
+nav {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensures it is above other elements */
+}
+.navbar {
+    display: flex; /* Use Flexbox for layout */
+    justify-content: center; /* Center the navbar items */
+    list-style: none; /* Remove default list bullets */
+    padding: 10px 0; /* Padding for the navbar */
+    margin: 0; /* Remove default margin */
+    background-color: #007acc; /* Darker blue background */
+    border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+.navbar li {
+    margin: 0 15px; /* Space between each item */
+}
+.navbar a {
+    color: #ffffff; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 15px 20px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+.navbar a:hover {
+    background-color: #ffcc00; /* Yellow background on hover */
+    color: #35424a; /* Dark text on hover */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    .navbar li {
+        margin: 10px 0; /* Space between items in vertical layout */
+    }
+}
+/* Additional body padding to prevent overlap */
+body {
+    padding-top: 70px; /* Increased space for the fixed navbar height */
+}
+/* Section Styles */
+.section {
+    padding: 40px; /* Padding for sections */
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    margin: 20px 0; /* Margin above and below */
+}
+.container {
+    max-width: 800px; /* Max width for content */
+    margin: auto; /* Center align container */
+}
+/* Heading Styles */
+h2 {
+    font-size: 28px; /* Font size for heading */
+    color: #007acc; /* Blue color for heading */
+    margin-bottom: 20px; /* Space below heading */
+    text-align: center; /* Center align heading */
+}
+/* Paragraph Styles */
+p {
+    font-size: 18px; /* Font size for paragraph */
+    line-height: 1.6; /* Line height for readability */
+    margin: 10px 0; /* Margin above and below paragraphs */
+}
+/* Quote Styles */
+.quote {
+    font-size: 22px; /* Larger font size for quotes */
+    font-style: italic; /* Italic style for emphasis */
+    text-align: center; /* Center align quote */
+    color: #555; /* Dark gray color */
+    margin-top: 20px; /* Space above quote */
+}
+/* Strong Text Styles */
+strong {
+    color: #333; /* Darker text for strong emphasis */
+}
+/* HR Styles */
+hr {
+    border: 0; /* Remove default border */
+    height: 1px; /* Set height */
+    background: #007acc; /* Blue color for horizontal line */
+    margin: 20px 0; /* Space above and below the line */
+}
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Increased padding for better readability */
+    text-align: left;
+}
+th {
+    background-color: #007acc; /* Darker blue */
+    color: #ffffff;
+}
+tbody tr:hover {
+    background-color: #e7f3fe; /* Light blue on hover */
+}
+/* Button Styles */
+.resume-button {
+    background: #007acc; /* Darker blue */
+    color: #ffffff;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    border: none; /* Removed border */
+}
+.resume-button:hover {
+    background: #005f99; /* Darker blue on hover */
+}
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px; /* Increased padding for input fields */
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: border 0.3s; /* Smooth border transition */
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border: 1px solid #007acc; /* Highlight border on focus */
+}
+button {
+    background: #007acc; /* Darker blue */
+    color: #ffffff;
+    padding: 12px; /* Increased padding for button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+button:hover {
+    background: #005f99; /* Darker blue on hover */
+}
+/* Skills Section Styles */
+.skill-grid {
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between grid items */
+    margin-top: 20px; /* Space above the grid */
+}
+.skill-item {
+    background-color: #e0f7fa; /* Light cyan background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 15px; /* Padding inside each skill item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+    font-size: 18px; /* Font size for skills */
+    color: #007acc; /* Default text color */
+}
+.skill-item:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+/* Strong Text Styles */
+.skill-item strong {
+    color: #ff5722; /* Orange color for strong text */
+}
+/* Icon Color Styles */
+.skill-item:first-child { color: #673ab7; } /* Purple for Programming Languages */
+.skill-item:nth-child(2) { color: #4caf50; } /* Green for Frameworks */
+.skill-item:nth-child(3) { color: #2196f3; } /* Blue for Web Technologies */
+.skill-item:nth-child(4) { color: #ff9800; } /* Amber for Tools */
+.skill-item:nth-child(5) { color: #9c27b0; } /* Deep Purple for Databases */
+.skill-item:last-child { color: #f44336; } /* Red for Soft Skills */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .skill-grid {
+        grid-template-columns: 1fr; /* Stack items vertically on small screens */
+    }
+}
+footer {
+    background: #007acc; /* Darker blue */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0; /* Increased padding for better spacing */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Added margin to separate from content above */
+}
+/* Profile Container Styles */
+/* Profile Container Styles */
+.profile-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    background-color: #ffffff; /* White background for profile section */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px; /* Padding inside the container */
+    margin-top: 20px; /* Space above the profile container */
+}
+/* Profile Photo Styles */
+.profile-photo {
+    border-radius: 50%; /* Circular profile photo */
+    margin-right: 20px; /* Space between image and text */
+    border: 3px solid #007acc; /* Blue border around the photo */
+}
+/* Profile Info Text Styles */
+.profile-info {
+    color: #333; /* Dark gray text color */
+}
+/* Colorful Text Styles */
+.profile-info p {
+    font-size: 18px; /* Font size for paragraphs */
+    line-height: 1.6; /* Line height for readability */
+    margin: 10px 0; /* Margin above and below paragraphs */
+}
+.profile-info strong {
+    color: #007acc; /* Blue color for strong text */
+}
+/* Link Styles */
+.profile-info a {
+    color: #ff6347; /* Tomato color for email link */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+.profile-info a:hover {
+    color: #ff4500; /* Darker orange on hover */
+}
+/* Input Styles */
+input[type="file"] {
+    margin-top: 15px; /* Space above file input */
+    padding: 10px; /* Padding for file input */
+    border: 1px solid #007acc; /* Blue border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .profile-photo {
+        margin-bottom: 15px; /* Space below image */
+    }
+}
+/* Projects Section Styles */
+.project {
+    background-color: #f0f4c3; /* Light green background */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside each project */
+    margin-top: 15px; /* Space above each project */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+}
+.project:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+/* Heading Styles */
+h2 {
+    color: #007acc; /* Blue color for main heading */
+    text-align: center; /* Center align heading */
+    margin-bottom: 20px; /* Space below heading */
+}
+h3 {
+    color: #ff5722; /* Orange color for project titles */
+    margin: 0; /* Remove default margins */
+    font-size: 24px; /* Font size for project titles */
+}
+/* Paragraph Styles */
+p {
+    font-size: 18px; /* Font size for project descriptions */
+    line-height: 1.6; /* Line height for readability */
+    color: #333; /* Dark gray color for text */
+}
+/* Emphasis for No Projects Message */
+.container p:first-of-type {
+    font-style: italic; /* Italicize the no projects message */
+    color: #616161; /* Gray color for emphasis */
+    text-align: center; /* Center align message */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .project {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+    h3 {
+        font-size: 20px; /* Reduce font size for project titles */
+    }
+    p {
+        font-size: 16px; /* Reduce font size for descriptions */
+    }
+}
+/* Section Styles */
+.section {
+    padding: 40px 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 8px; /* Rounded corners for the section */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    position: relative; /* Position for pseudo-elements */
+    overflow: hidden; /* Hide overflow for pseudo-elements */
+}
+/* Background Decoration */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('background-image-url.jpg') no-repeat center center/cover; /* Replace with your image URL */
+    opacity: 0.1; /* Light overlay */
+    z-index: 1; /* Behind the content */
+}
+h2 {
+    text-align: center; /* Center align the heading */
+    color: #007acc; /* Blue color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* Position for text shadow */
+    z-index: 2; /* Above the background */
+    font-size: 2em; /* Increase font size for the heading */
+    text-transform: uppercase; /* Uppercase letters */
+    letter-spacing: 2px; /* Space between letters */
+}
+/* File Upload Input Styles */
+#certificate-upload {
+    display: block; /* Make file input block-level */
+    margin: 15px auto; /* Center it with auto margins */
+    padding: 10px; /* Padding for the input */
+    border: 2px dashed #007acc; /* Dashed border */
+    border-radius: 5px; /* Rounded corners */
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for larger screens */
+    z-index: 2; /* Above the background */
+    background-color: #ffffff; /* White background */
+    transition: border-color 0.3s; /* Smooth transition on focus */
+}
+#certificate-upload:focus {
+    border-color: #005f99; /* Darker blue on focus */
+}
+/* Certification List Styles */
+.certification-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove padding */
+    z-index: 2; /* Above the background */
+    position: relative; /* Create a stacking context */
+}
+.certification-list li {
+    font-size: 18px; /* Font size for the list items */
+    margin: 10px 0; /* Space between items */
+    transition: transform 0.3s, padding 0.3s; /* Smooth transformation on hover */
+    padding: 10px; /* Add padding for better click area */
+    border-radius: 5px; /* Rounded corners for list items */
+    background-color: rgba(255, 255, 255, 0.8); /* Light background for each item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    position: relative; /* For z-index stacking */
+    z-index: 2; /* Above the background */
+}
+/* Colorful Text Styles */
+.colorful-text {
+    background: linear-gradient(90deg, #ff5733, #33c1ff, #75ff33); /* Colorful gradient */
+    -webkit-background-clip: text; /* Clip the background to text */
+    -webkit-text-fill-color: transparent; /* Fill color transparent for gradient effect */
+    font-weight: bold; /* Bold text */
+}
+/* Hover Effect on List Items */
+.certification-list li:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    cursor: pointer; /* Change cursor to pointer */
+    background-color: rgba(255, 255, 255, 0.9); /* Slightly darker background on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section {
+        padding: 20px 10px; /* Reduce padding on smaller screens */
+    }
+    h2 {
+        font-size: 1.5em; /* Decrease heading size */
+    }
+    #certificate-upload {
+        max-width: 100%; /* Full width on small screens */
+    }
+}
+.certification-list li {
+    font-size: 16px; /* Decrease font size for smaller screens */
+}
+/* Table Styles */
+/* Table Styles */
+.grades-table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+    margin-bottom: 30px; /* Space below tables */
+    background-color: #ffffff; /* White background for tables */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+.grades-table th,
+.grades-table td {
+    padding: 12px; /* Padding for table cells */
+    text-align: left; /* Left align text in cells */
+    border-bottom: 2px solid #dee2e6; /* Bottom border for rows */
+}
+/* Header Styles */
+.grades-table th {
+    background-color: #007acc; /* Blue background for headers */
+    color: #ffffff; /* White text for headers */
+    font-weight: bold; /* Bold text for headers */
+}
+/* Alternating Row Colors */
+.grades-table tbody tr:nth-child(even) {
+    background-color: #f7f7f7; /* Light grey for even rows */
+}
+.grades-table tbody tr:hover {
+    background-color: #e2e2e2; /* Light grey on hover */
+}
+/* Grade Color Coding */
+.grade-a {
+    color: #28a745; /* Green for A grades */
+    font-weight: bold; /* Bold text for A grades */
+}
+.grade-b-plus {
+    color: #ffc107; /* Yellow for B+ grades */
+    font-weight: bold; /* Bold text for B+ grades */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .grades-table {
+        font-size: 14px; /* Decrease font size for smaller screens */
+    }
+    .grades-table th, .grades-table td {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
+/* About Section Styles */
+.about-section {
+    background-color: #f9f9f9; /* Light grey background */
+    padding: 40px 20px; /* Padding for section */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+.about-title {
+    color: #007acc; /* Blue color for title */
+    font-size: 2em; /* Larger font size for title */
+    margin-bottom: 20px; /* Space below title */
+}
+.highlight {
+    color: #ff6f61; /* Coral color for highlighted text */
+}
+.income {
+    color: #28a745; /* Green color for income expectation */
+    font-weight: bold; /* Bold font for emphasis */
+}
+.quote {
+    font-style: italic; /* Italic style for quote */
+    color: #555; /* Dark grey color for quote */
+    text-align: center; /* Center align quote */
+    margin-top: 20px; /* Space above quote */
+}
+/* Divider Styles */
+.divider {
+    border: 1px solid #ddd; /* Light grey border */
+    margin: 20px 0; /* Margin above and below divider */
+}
+

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raghul's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Raghul's Portfolio</h1>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#profile">Profile</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2 class="about-title">About Me</h2>
+                <p>Hello! I'm <strong class="highlight">Raghul</strong>, an engineering student at <strong class="highlight">AAA College of Engineering and Technology</strong>, currently studying in the IT Department, Second Year. I am passionate about coding and designing.</p>
+                <p><strong class="highlight">Annual Income Expectation:</strong> <span class="income">₹1,200,000</span> (not yet achieved)</p>
+                <p><strong class="highlight">Interests:</strong> Coding, software development, exploring design technologies.</p>
+                <p><strong class="highlight">Future Goals:</strong> To secure a high-sequence job with a high salary in the technology sector.</p>
+                <hr class="divider">
+                <p class="quote">"Passion fuels innovation!"</p>
+            </div>
+        </section>
+        <section id="profile" class="section">
+            <div class="container">
+                <h2>My Profile</h2>
+                <div class="profile-container">
+                    <img id="profile-photo-preview" src="img.jpg" width="150" alt="Profile Photo" class="profile-photo">
+                    <div class="profile-info">
+                        <p><strong>Name:</strong> Raghul</p>
+                        <p><strong>College:</strong> AAA College of Engineering and Technology</p>
+                        <p><strong>Department:</strong> Information Technology</p>
+                        <p><strong>Year:</strong> 2nd Year</p>
+                        <p><strong>Age:</strong> 18</p>
+                        <p><strong>Native Place:</strong> Rajapalayam</p>
+                        <p><strong>Date of Birth:</strong> 28-08-2006</p>
+                        <p><strong>Email:</strong> <a href="mailto:23urit037@aaacet.ac.in">23urit037@aaacet.ac.in</a></p>
+                        <label for="profile-photo">Upload New Photo:</label>
+                        <input type="file" id="profile-photo" accept="image/*" required>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skill-grid">
+                    <div class="skill-item">💻 <strong>Programming Languages:</strong> Java, Data Structures</div>
+                    <div class="skill-item">🔧 <strong>Frameworks:</strong> React, Node.js, Spring Boot</div>
+                    <div class="skill-item">🌐 <strong>Web Technologies:</strong> HTML, CSS, Bootstrap</div>
+                    <div class="skill-item">📦 <strong>Tools:</strong> Git, Docker, Jenkins</div>
+                    <div class="skill-item">📊 <strong>Databases:</strong> MySQL, MongoDB, PostgreSQL</div>
+                    <div class="skill-item">🤝 <strong>Soft Skills:</strong> Team Collaboration, Communication, Critical Thinking</div>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>My Projects</h2>
+                <p>No academic projects completed yet, but I am eager to start working on them!</p>
+                <div class="project">
+                    <h3>🧠 Generative AI Workshop</h3>
+                    <p>Participated in a workshop at Paavai Engineering College on 08-11-2024 focused on Generative AI technologies.</p>
+                </div>
+                <div class="project">
+                    <h3>🌐 Full Stack Development Course</h3>
+                    <p>Completed a 1-year Full Stack Development course conducted by AAACET in collaboration with Elysium Academy.</p>
+                </div>
+                <div class="project">
+                    <h3>🚀 Elysium Academy Full Stack Seminar</h3>
+                    <p>Attended a full stack seminar on 02-10-2024 at Elysium Academy, gaining practical experience in various web development technologies.</p>
+                </div>
+            </div>
+        </section>
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2>Certifications & Courses</h2>
+                <form id="certification-form">
+                    <p><strong>Upload Certificates:</strong></p>
+                    <input type="file" id="certificate-upload" accept=".pdf, .jpg, .jpeg, .png" multiple>
+                    <ul class="certification-list">
+                        <li>👨‍🎓 <strong class="colorful-text">Certificate in Full Stack Development</strong> - Coursera</li>
+                        <li>🖥️ <strong class="colorful-text">Java Programming and Software Engineering Fundamentals</strong> - edX</li>
+                        <li>📊 <strong class="colorful-text">Data Science Professional Certificate</strong> - IBM</li>
+                        <li>🔐 <strong class="colorful-text">Cybersecurity Fundamentals</strong> - Cisco Networking Academy</li>
+                        <li>🌐 <strong class="colorful-text">Web Development Bootcamp</strong> - Udemy</li>
+                        <li>📜 <strong class="colorful-text">Machine Learning Specialization</strong> - Coursera</li>
+                        <li>📈 <strong class="colorful-text">Data Analysis with Python</strong> - DataCamp</li>
+                        <li>📱 <strong class="colorful-text">Mobile App Development</strong> - Udacity</li>
+                        <li>🛡️ <strong class="colorful-text">Ethical Hacking Certification</strong> - Cybrary</li>
+                        <li>🏅 <strong class="colorful-text">Project Management Professional (PMP)</strong> - PMI</li>
+                    </ul>
+                </form>
+            </div>
+        </section>
+        <section id="academics" class="section"> <!-- Academics Section -->
+            <div class="container">
+                <h2>Academic Achievements</h2>
+                <h3>IT Department - Semester Grades</h3>
+                <h4>1st Semester</h4>
+                <table class="grades-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Code</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GE3152</td>
+                            <td>Tamil</td>
+                            <td class="grade-b-plus">B+</td>
+                        </tr>
+                        <tr>
+                            <td>HS3152</td>
+                            <td>English</td>
+                            <td class="grade-b-plus">B+</td>
+                        </tr>
+                        <tr>
+                            <td>MA3151</td>
+                            <td>Maths</td>
+                            <td class="grade-a">A</td>
+                        </tr>
+                        <tr>
+                            <td>PH3151</td>
+                            <td>Physics</td>
+                            <td class="grade-a">A</td>
+                        </tr>
+                        <tr>
+                            <td>CY3151</td>
+                            <td>Chemistry</td>
+                            <td class="grade-a">A</td>
+                        </tr>
+                        <tr>
+                            <td>GE3151</td>
+                            <td>Python</td>
+                            <td class="grade-a">A</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h4>2nd Semester</h4>
+                <table class="grades-table">
+                    <thead>
+                        <tr>
+                            <th>Subject Code</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>GE3252</td>
+                            <td>Tamil</td>
+                            <td class="grade-a">A</td>
+                        </tr>
+                        <tr>
+                            <td>HS3252</td>
+                            <td>English</td>
+                            <td class="grade-b-plus">B+</td>
+                        </tr>
+                        <tr>
+                            <td>MA3251</td>
+                            <td>Maths</td>
+                            <td class="grade-b-plus">B+</td>
+                        </tr>
+                        <tr>
+                            <td>PH3256</td>
+                            <td>Physics</td>
+                            <td class="grade-a">A</td>
+                        </tr>
+                        <tr>
+                            <td>BE3251</td>
+                            <td>Beee</td>
+                            <td class="grade-b-plus">B+</td>
+                        </tr>
+                        <tr>
+                            <td>GE3251</td>
+                            <td>EG</td>
+                            <td class="grade-a">A</td>
+                        </tr>
+                        <tr>
+                            <td>CS3251</td>
+                            <td>Programming in C</td>
+                            <td class="grade-b-plus">B+</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <section id="resume" class="section resume-section">
+            <div class="container">
+                <h2 class="resume-title color:#ff5">Resume</h2>
+                <p><a href="#" class="resume-button">Download My Resume</a></p>
+                <p class="resume-description">Feel free to explore my resume, which includes my education, work experience, and projects!</p>
+            </div>
+        </section>
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2 class="contact-title">Contact Me</h2>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required class="form-input">
+                    <input type="email" placeholder="Your Email" required class="form-input">
+                    <textarea placeholder="Your Message" required class="form-textarea"></textarea>
+                    <button type="submit" class="form-button">Send Message</button>
+                </form>
+                <h3 class="social-title color:#ff5">Social Media Links</h3>
+                <ul class="social-links">
+                    <li><a href="https://www.instagram.com/raghul8k?igsh=MWd1ZmFzdDNmOXp5bw==" target="_blank" class="social-link">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/share/1644nLsEmY/" target="_blank" class="social-link">Facebook</a></li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <p class="footer-text">&copy; 2025 Raghul's Engineering Portfolio. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Raghul's Engineering Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
